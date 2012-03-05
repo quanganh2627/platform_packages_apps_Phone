@@ -987,7 +987,6 @@ public class DTMFTwelveKeyDialer implements View.OnTouchListener, View.OnKeyList
             mDTMFBurstCnfPending = false;
             if (!mDTMFQueue.isEmpty()) {
                 dtmfChar = mDTMFQueue.remove();
-                Log.i(LOG_TAG, "The dtmf character removed from queue" + dtmfChar);
             }
         }
         if (dtmfChar != null) {
